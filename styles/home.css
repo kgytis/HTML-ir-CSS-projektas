@@ -141,3 +141,54 @@ i:hover{
     justify-content: center;
 }
 
+@media (min-width: 1200px) {
+
+    header, .footerNavigationBigDiv{
+        justify-content: space-between;
+        }
+    
+        .logoDiv, .navigationDiv{
+            width: 50%;
+        }
+    
+        .navigationDiv ul{
+            justify-content: space-around;
+        }
+    
+        .smallAbout{
+            display: block;
+        }
+
+        #films{
+            display: grid;
+            grid-template-columns: repeat(1fr, 4);
+            grid-template-rows: repeat(1fr, 4);
+        }
+
+        #films h2 {
+            grid-area: 1 / 1 / 2 / 4;
+            text-align: center;
+        }
+        #films h2::before{
+            border: 1px solid white;
+            display: block;
+            content: '';
+        }
+        #films h2::after{
+            border: 1px solid white;
+            display: block;
+            content: '';
+        }
+
+        .smallAbout h3, .smallAbout a{
+            text-align: center;
+        }
+
+        .copyright p{
+            align-self: center;
+        }
+        
+        .footerNavigationBigDiv div:first-child a {
+            margin: 0 40px;
+        }
+    }
