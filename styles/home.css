@@ -55,9 +55,32 @@ header{
     margin: 0 0.5em;
 }
 /*---------------------------*/
-/*Menu sticky postion*/
 
+h1, h2, h4, p {
+    margin: 5px;
+}
+
+h3{
+margin: 5px 0;
+}
 
 .main{
-    height: 200vh;
+    height: auto;
+    background-color: rgb(61, 82, 107);
+    color: white;
+}
+
+.smallAbout {
+    display: flex;
+    margin: 5px
+}
+
+.smallAbout div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+#films img, #series img {
+    width: auto;
+    height: 400px;
 }
