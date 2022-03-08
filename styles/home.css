@@ -3,16 +3,19 @@
 header{
     display: flex;
     justify-content: space-around;
+    position:sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .logoDiv img{
-    height: 8em;
-    width: 8em;
+    height: 6em;
+    width: 6em;
 }
 
 /*Atskiru Div stilizavimas*/
 .logoDiv {
-    height: 8em;
+    height: 6em;
     width: 29%;
     background-color: rgb(45, 62, 82);
 }
@@ -52,6 +55,9 @@ header{
     margin: 0 0.5em;
 }
 /*---------------------------*/
+/*Menu sticky postion*/
 
 
-
+.main{
+    height: 200vh;
+}
