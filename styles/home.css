@@ -2,6 +2,12 @@
     scroll-behavior: smooth;
 }
 
+.main{
+    height: auto;
+    background-color: rgb(61, 82, 107);
+    color: white;
+}
+
 /*Header -> Menu stilizavimas*/
 
 header{
@@ -60,18 +66,13 @@ header{
 }
 /*---------------------------*/
 
+/*Films bei series dalies stilizavimas*/
 h1, h2, h4, p {
     margin: 5px;
 }
 
 h3{
 margin: 5px 0;
-}
-
-.main{
-    height: auto;
-    background-color: rgb(61, 82, 107);
-    color: white;
 }
 
 .smallAbout {
@@ -88,7 +89,9 @@ margin: 5px 0;
     width: auto;
     height: 400px;
 }
+/*---------------------------*/
 
+/*Footer stilizavimas*/
 i {
     padding: 5px;
     font-size: 2em;
@@ -127,7 +130,7 @@ i:hover{
     flex-direction: column;
     justify-content: flex-end;
 }
-/*Kad icons butu baltos*/
+/*Kad icons butu baltos, re-writing bootstrap*/
 .bi {
     color: white;
 }
@@ -142,7 +145,11 @@ i:hover{
     justify-content: center;
 }
 
+/*---------------------------*/
+
 @media (min-width: 1200px) {
+
+/*Pasikeitus ekranui pasikeicia header ir footer stilius*/
 
     header, .footerNavigationBigDiv{
         justify-content: space-between;
@@ -155,7 +162,8 @@ i:hover{
         .navigationDiv ul{
             justify-content: space-around;
         }
-    
+/*---------------------------*/
+/*Pasikeitus ekranui pasikeicia pagr. dalies display į grid ir nuimami flexai ir kt. stilizavimai*/
         .smallAbout{
             display: block;
         }
@@ -184,11 +192,9 @@ i:hover{
         .smallAbout h3, .smallAbout a{
             text-align: center;
         }
+/*---------------------------*/
 
-        .copyright p{
-            align-self: center;
-        }
-        
+/*Pasikeitus akrado dydžiui padidėja tarpai tarp contact info*/
         .footerNavigationBigDiv div:first-child a {
             margin: 0 40px;
         }
