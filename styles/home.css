@@ -134,6 +134,7 @@ i:hover{
 .footerNavigationBigDiv{
     display: flex;
     justify-content: space-around;
+    border-top: 2px solid white;
 }
 
 .copyright{
@@ -159,23 +160,23 @@ i:hover{
             display: block;
         }
 
-        #films{
+        #films, #series{
             display: grid;
             grid-template-columns: repeat(1fr, 4);
             grid-template-rows: repeat(1fr, 4);
         }
 
-        #films h2 {
+        #films h2, #series h2 {
             grid-area: 1 / 1 / 2 / 4;
             text-align: center;
         }
-        #films h2::before{
-            border: 1px solid white;
+        #films h2::before, #series h2::before{
+            border-bottom: 2px solid white;
             display: block;
             content: '';
         }
-        #films h2::after{
-            border: 1px solid white;
+        #films h2::after, #series h2::after{
+            border-bottom: 2px solid white;
             display: block;
             content: '';
         }
