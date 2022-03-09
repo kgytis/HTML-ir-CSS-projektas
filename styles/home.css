@@ -89,6 +89,20 @@ margin: 5px 0;
     width: auto;
     height: 400px;
 }
+
+#films h2, #series h2{
+    position: sticky;
+    z-index: 9;
+    top: 6rem;
+    background-color:rgb(61, 82, 107);
+}
+
+#films h2 a, #series h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /*---------------------------*/
 
 /*Footer stilizavimas*/
