@@ -7,15 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mano Filmų svetainė</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <main class="main">
         <header>
-            <div class=logoDiv>
+            <div class="logoDiv">
                 <a href="index.html"><img src="images/logoImage.gif"></a>
             </div>
-            <div class=navigationDiv>
+            <div class="burger">
+                <a href="javascript:void(0);">
+                    <!--Kad laikytusi paspaudus isskleistas meniu-->
+                    <i class="bi bi-justify"></i>
+                </a>
+            </div>
+            <div class="navigationDiv">
                 <ul>
                     <a href="#about">
                         <li>About</li>
